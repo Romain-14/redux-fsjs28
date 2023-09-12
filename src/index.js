@@ -8,6 +8,8 @@ import { store } from "./store/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+    // composant de react-redux qui englobe notre App et rend disponible les reducers/state
+    // on se "branchera" depuis un composant au store avec les hooks useSelector pour récupérer les states ou useDispatch pour envoyer l'action vers le reducer
     <Provider store={store}>
         <BrowserRouter>
             <App />
